@@ -1,26 +1,27 @@
-# 趣丸千音公开课页面
+# AllVoiceLab Pages
 
-这是一个可直接发布的静态页面项目。
+这是用于发布公众号文章静态页面的 GitHub Pages 仓库。
+
+## 线上页面
+
+- 首页文章：`https://joeyyy133.github.io/AllVoiceLab/`
+- DataEye AIGC 产业园文章：`https://joeyyy133.github.io/AllVoiceLab/dataeye-aigc-park.html`
 
 ## 文件
 
-- `index.html`: 对外访问的首页
-- `article.md`: 原始 Markdown 备份
+- `index.html`: AI时代新副业 DataEye x 趣丸千音线下公开课文章
+- `dataeye-aigc-park.html`: 祝贺 DataEye AIGC 产业园开园文章
+- `assets/images/`: 页面图片资源，本地化后避免微信图片防盗链
 - `.nojekyll`: 关闭 GitHub Pages 的 Jekyll 处理，避免静态文件被改写
 
-## GitHub 上传
+## 更新流程
 
-把本目录作为一个 GitHub 仓库上传即可。建议仓库名：
+修改 HTML 或图片后：
 
-`quwan-qianyin-page`
+```bash
+git add .
+git commit -m "Update page"
+git push
+```
 
-## EdgeOne Makers 发布配置
-
-在 EdgeOne Makers 中连接 GitHub 仓库后：
-
-- Framework preset: `Other` / 静态站点
-- Build command: 留空
-- Output directory: `.`
-- Root directory: `.`
-
-部署完成后，EdgeOne 会生成一个可公开访问的 URL。
+GitHub Pages 会自动发布更新。
